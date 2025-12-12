@@ -18,8 +18,8 @@ secondry = st.sidebar.selectbox('Select Secondry Parameter' , sorted(df.columns)
 plot = st.sidebar.button('Plot Graph')
 
 if plot:
-    st.text('Size Represents Primary Parameter'
-            ' Colour represents Secondry Parameter')
+    st.text('Size Represents Primary Parameter')
+    st.text(' Colour represents Secondry Parameter')
     if state_select == 'Overall India':
         #         plot for india
         fig = px.scatter_mapbox(df, lat='Latitude', lon='Longitude', size = primary ,
